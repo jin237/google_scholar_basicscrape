@@ -1,16 +1,10 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
-
-
 from bs4 import BeautifulSoup
 import requests
 import pandas as pd
 import re
-
-
-# In[3]:
 
 
 def get_search_results_df(keyword,number):
@@ -37,36 +31,10 @@ def get_search_results_df(keyword,number):
     return df
 
 
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[7]:
-
-
 keyword = "machine learning"
 number = 10
 search_results_df = get_search_results_df(keyword,number)
 filename = "Google_Scholar.csv"
 search_results_df.to_csv(filename, encoding="utf-8")
-
-
-# In[ ]:
-
-
 
 
